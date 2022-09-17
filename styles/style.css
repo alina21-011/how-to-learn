@@ -9,17 +9,119 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.description {
+
+
+
+}
+.logo_place_header {
+  position: absolute;
+  height: 32px;
+  width: 228px;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-style: 600px;
+  font-size: 102px;
+  align-self: center;
+  z-index: 2;
+}
+
+.header__subtitle {
+  position: absolute;
+  z-index: 2;
+  line-height: 25px;
+  font-style: normal;
+  font-size: 18px;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+}
+
+.header__link{
+  color:#2f80ed;
+  text-decoration:none;
+}
+
+.header__main-illustration {
+  background-image: url(../images/header-image.png);
+  alt: "Главная картинка";
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  right: 0;
+  bottom: 64px;
+  background-color: #2f80ed;
+  z-index: 0;
+
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top:100px;
+  margin-bottom:100px;
+  width: 80%;
+
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-size: 18px;
+  color: #2f80ed;
+
+}
+
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph{
+  line-height: 34px;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom:30px;
+  margin-top: 0;
+}
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.two-columns__paragraph:nth-of-type(3n) {
+  margin-bottom: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
