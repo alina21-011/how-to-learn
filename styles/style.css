@@ -277,7 +277,7 @@
 }
 
 .footer__author {
-  margin: 18 px 0 18px auto;
+  margin: 18px auto 18px 0;
   line-height: 25px;
   font-weight: normal;
   font-size: 18px;
@@ -301,6 +301,11 @@
   font-size: 18px;
   color: white;
   padding-left: 0;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
 }
 
 .footer__social-icon {
