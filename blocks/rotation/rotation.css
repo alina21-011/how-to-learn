@@ -8,9 +8,7 @@
 }
 
 .rotation {
-animation: rotation 20s infinite;
+animation: rotation 20s linear infinite;
 }
 
-.rotation__triangle {
-  animation: rotation linear 30s infinite;
-}
+
